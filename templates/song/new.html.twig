@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouveau Titre{% endblock %}
+
+{% block body %}
+    <h1>Crée un titre</h1>
+
+    {{ include('song/_form.html.twig') }}
+
+    <a href="{{ path('app_song_index') }}">retour à la liste</a>
+{% endblock %}

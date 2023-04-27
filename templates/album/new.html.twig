@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelle Album{% endblock %}
+
+{% block body %}
+    <h1>Crée un album</h1>
+
+    {{ include('album/_form.html.twig') }}
+
+    <a href="{{ path('app_album_index') }}">retour à la liste</a>
+{% endblock %}
